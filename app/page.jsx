@@ -1,4 +1,4 @@
-import Container from "./components/Container"
+import ContainerLayout from "./components/ContainerLayout"
 import Image from "next/image"
 import ProfilePic from "../public/images/profile/developer2.png"
 import AnimatedText from "./components/text/AnimatedText";
@@ -10,7 +10,7 @@ export default function Home() {
 
 	return (
 		<main className="flex items-center text-dark w-full bg-light min-h-screen">
-			<Container className="pt-0">
+			<ContainerLayout className="pt-0">
 				<div className="flex items-center justify-between w-full">
 					<div className="pl-48 w-1/2" >
 						<Image src={ProfilePic} alt="developer image" className="w-580 h-auto object-contain" />
@@ -42,7 +42,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-			</Container>
+			</ContainerLayout>
 		</main>
 	);
 }
